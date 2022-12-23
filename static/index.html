@@ -1,0 +1,163 @@
+<html>
+    
+    <head>
+
+        <title>Snobalz.io</title>
+        
+        <style type="text/css">
+
+            @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap");
+            @import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+            
+            body {
+                
+                margin: 0;
+                padding: 0;
+                font-family: "Open Sans", sans-serif;
+            }
+            
+            canvas {
+                
+                border: 0px solid black;
+                box-sizing: border-box;
+                display: none;
+                letter-spacing: 1.2px;
+            }
+
+            #main-page {
+                display: block;
+            }
+
+            #entry-page {
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(to right, #1fa2ff, #12d8fa, #a6ffcb);
+                text-align: center;
+            }
+
+            #title {
+
+                font-size: 100px;
+                color: #0a137f;
+                text-shadow: 5px 5px 1px hsl(200, 50%, 50%);
+                font-family: "Chewy", cursive;
+                letter-spacing: 3px;
+                display: inline-block;
+                margin: 100 auto;
+            }
+
+            .button {
+                width:  100px;
+                height:  50px;
+                background: transparent;
+                border: 2px solid #a6ffcb;
+                border-radius:  20px;
+                color: #0a137f;
+                font-family: "Chewy", cursive;
+                font-size: 130%;
+                transition: 1s;
+                box-shadow: 0px 3px 0px white;
+            }
+
+            .button:hover {
+                width:  100px;
+                height:  50px;
+                background: rgba(0, 0, 0, 0.1);
+                transition: 1s;
+                border: 2px solid #a6ffcb;
+                border-radius:  20px;
+                color: #0a137f;
+                font-family: "Chewy", cursive;
+                font-size: 130%;
+                cursor: pointer;
+                box-shadow: 0px 0px 0px white;
+            }
+
+            code {
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                padding: 5px;
+                color: white;
+                font-size: 120%;
+            }
+
+            code > a {
+                color: white;
+            }
+
+            input {
+                border: 0px solid grey;
+                background: rgba(255, 255, 255, 0.3);
+                outline: none;
+                color: #0a137f;
+                font-family: "Open Sans", sans-serif;
+                font-size: 120%;
+                position: relative;
+                bottom: 50px;
+                border-radius: 5px;
+                padding: 10px;
+                box-shadow: 0px 3px 0px rgba(255, 255, 255, 0.7);
+                transition: 1s;
+            }
+
+            input:focus {
+                box-shadow: 0px 0px 0px grey;
+                transition: 1s;
+            }
+
+            #death-screen {
+                display: none;
+                background: rgba(0, 0, 0, 0.7);
+                color: white;
+                width: 100%;
+                height: 100%;
+                text-align: center;
+                margin: 0;
+                position: fixed;
+                
+            }
+
+            
+        </style>
+        
+        <script src="/socket.io/socket.io.js"></script>
+        
+    </head>
+    
+    <body>
+        <div id="main-page">
+            <div id="entry-page">
+                <h1 id="title">Snobalz.io</h1>
+                <br>
+                <input type="text" id="name"></input>
+                <br>
+                <button id="play" class="button">PLAY</button>
+            </div>
+            <code>&copy; Snobalz.io 2021 | <a href="https://alonesolutions.ca/">Daniel Martinez at Alone Solutions</a></code>
+            </div>
+        </div>
+        <div id="death-screen">
+            <h1 style="margin-top: 200px; display: inline-block;">You were downed</h1>
+            <a href="/static/index.html"><br>
+            <button id="play"class="button" style="height: 65px; width: 120px; color:white;">PLAY AGAIN</button>
+            </a>
+        </div>
+        <canvas id="canvas"></canvas>
+
+        <script src="/static/game.js"></script>
+
+        <script>
+            var button = document.getElementById("play")
+
+            var started = false;
+
+        </script>
+        
+    </body>
+    
+  
+    
+</html>
