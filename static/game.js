@@ -199,7 +199,7 @@ function drawGrid(player) {
     var linesdrawnX = 0;
     var linesdrawnY = 0;
 //    var linecolor = "#E1E9ED";
-    var linecolor = "#0a0a0a";
+    var linecolor = "#121212";
     ctx.lineWidth = 2;
 
     while (linesdrawnX <= numberoflinesX) {

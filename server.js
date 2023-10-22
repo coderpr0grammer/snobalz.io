@@ -18,8 +18,8 @@ app.get("/", function(request, response) {
     
 });
 
-server.listen(5000, function() {
-  console.log('Starting server on port 5000');
+server.listen(5001, function() {
+  console.log('Starting server on port 5001');
 });
 
 class Player {
