@@ -258,12 +258,4 @@ setInterval(function () {
 
 // exports.socketIO = onRequest(io);
 
-exports.socketServer = onRequest((req, res) => {
-    cors(req, res, () => {
-      if (req.method === 'OPTIONS') {
-        res.status(204).send('');
-        return;
-      }
-      server(req, res);
-    });
-  });
+exports.socketServer = onRequest(io);
