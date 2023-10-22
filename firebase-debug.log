@@ -942,3 +942,17 @@ Issues? Report them at https://github.com/firebase/firebase-tools/issues and att
 [debug] [2023-10-22T13:39:02.615Z] Functions emulator received unknown request at path /socket.io/
 [debug] [2023-10-22T13:39:08.614Z] Functions emulator received unknown request at path /socket.io/
 [debug] [2023-10-22T13:39:08.615Z] Functions emulator received unknown request at path /socket.io/
+[debug] [2023-10-22T13:39:14.611Z] Functions emulator received unknown request at path /socket.io/
+[debug] [2023-10-22T13:39:14.613Z] Functions emulator received unknown request at path /socket.io/
+[debug] [2023-10-22T13:39:20.614Z] Functions emulator received unknown request at path /socket.io/
+[debug] [2023-10-22T13:39:20.615Z] Functions emulator received unknown request at path /socket.io/
+[debug] [2023-10-22T13:39:26.605Z] Functions emulator received unknown request at path /socket.io/
+[debug] [2023-10-22T13:39:26.610Z] Functions emulator received unknown request at path /socket.io/
+[debug] [2023-10-22T13:39:32.609Z] Functions emulator received unknown request at path /socket.io/
+[debug] [2023-10-22T13:39:32.610Z] Functions emulator received unknown request at path /socket.io/
+[debug] [2023-10-22T13:39:38.612Z] Functions emulator received unknown request at path /socket.io/
+[debug] [2023-10-22T13:39:38.614Z] Functions emulator received unknown request at path /socket.io/
+[debug] [2023-10-22T13:39:44.607Z] Functions emulator received unknown request at path /socket.io/
+[debug] [2023-10-22T13:39:44.608Z] Functions emulator received unknown request at path /socket.io/
+[debug] [2023-10-22T13:39:50.612Z] Functions emulator received unknown request at path /socket.io/
+[debug] [2023-10-22T13:39:50.613Z] Functions emulator received unknown request at path /socket.io/
